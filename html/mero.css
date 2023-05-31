@@ -1,0 +1,20 @@
+#box{
+    background-color: red;
+    height: 4000px;
+    width: 0.01px;
+    margin: 50%;
+}
+#box2{
+   background-color: blue;
+    height: 40px;
+    width: 40px;
+}
+#box1{
+    background-color: brown;
+    height: 40px;
+    width: 40px;
+    visibility: hidden;
+}
+body{
+    background-color: beige;
+}

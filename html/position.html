@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title> position property</title>
+        <style>
+            .sibling-element{
+                background-color: grey;
+
+            }
+            .main-element{
+                position: static;
+                position: absolute;
+                position: relative;
+                margin-left: 100px;
+             background-color: purple;
+             bottom: 30px;
+             /* height: 10px; */
+            }
+        </style>
+    </head>
+    <body>
+   <div>
+    <div class="sibling-element">
+        I'm the other sibling element.
+    </div>
+    <div class="main-element">
+        All eyes on me.I am the main element.
+    </div>
+    <div class="sibling-element">
+        I'm the other sibling element.
+    </div>
+   </div>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+#navigationbar{
+    background-color: orange;
+    height: 40px;
+    width: 100%vw;
+    
+}
+#navigationbar.ul{
+    padding-left: 300px;
+}
