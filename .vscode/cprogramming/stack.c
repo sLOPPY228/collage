@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define size 5
 int stack[size], top = -1, data;
 void push()
