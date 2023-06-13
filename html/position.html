@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        body{
+            height: 90000px;
+        }
+      #parent {
+        height: max-content;
+        width: 100vw;
+        border: 15px solid red;
+        margin-left: 90px;
+        margin-top: 90px;
+        position: relative;
+      }
+      #child_1 {
+        height: 900px;
+        width: 50%;
+        background-color: blue;
+       
+      }
+      #child_1:hover{
+        cursor: pointer;
+        rotate: 50deg;
+        transform: scale(50);
+      }
+      #child_2 {
+        height: 900px;
+        width: 49%;
+        background-color: yellow;
+        /* position: relative; */
+        /* position: absolute; */
+        position: sticky;
+        top: 0px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p style="font-size: 40px">parent</p>
+      <div id="child_1">child_1</div>
+      <div id="child_2">child_2</div>
+    </div>
+    <div>
+      <p style="font-size: 90px;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod culpa fugit
+          nostrum laudantium, harum quam distinctio facilis. Ipsam provident neque
+          deleniti? Nisi itaque adipisci ab sunt officia, eveniet sint animi!
+      </p>
+    </div>
+  </body>
+</html>
