@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JAVASCRIPT BASIC</title>
+    <script>
+      // for (let i = 0; i < 10; i++) {
+      //   document.write("<p>hello<br><p>");
+      // }
+      let x = confirm("are you sure?");
+
+      if (x == true) {
+        alert("you clicked on ok button");
+      } else {
+        alert("you clicked on cancel button");
+      }
+    </script>
+    <style>
+        p{
+            background-color: brown;
+            height: 40px;
+            width:100vw;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <!-- <script>
+      let arr = ["red","blue","green","white"];
+      let element = document.getElementById("para");
+      for(let i = 0;i<arr.length;i++){
+        element.innerText += arr[i];
+
+      }
+    </script> -->
+    <p id = "para">
+    </p>
+    <script>
+      var text,parser,xmlDoc;
+      text = "<bookstore><book>"+
+        "<title>the monk who sold his ferrari</title>"+
+        "<author>robin shrma</author>"+
+        "<year>2005<year>"
+          "</book></bookstore>";
+          parser=new DOMParser();
+          xmlDoc=parser.parseFromString(text,"text/xml");
+          document.getElementById("para").innerHTML=
+          xmlDoc.getElementByTagName("title")[0].childNodes[0].nodeValue;
+    </script>
+  </body>
+</html>

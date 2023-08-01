@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+<company>
+<employee>
+<fullname>Ram Lal</fullname>
+<designation>Ramanagara</designation>
+<address>Karnataka</address>
+</employee>
+<employee>
+<fullname>Ram Lal</fullname>
+<designation>Ramanagara</designation>
+<address>Karnataka</address>
+</employee>
+<employee>
+<fullname>Ram Lal</fullname>
+<designation>Ramanagara</designation>
+<address>Karnataka</address>
+</employee>
+</company>

@@ -17,3 +17,7 @@ $dbname = "workshop_db";
 $con = mysqli_connect($host, $dbusername, $dbpassword, $dbname);
 $sql = "INSERT INTO customer(username,password,name,age,phone_number,address) values('$username','$password1','$name','$age','$phone_number','$address')";
 mysqli_query($con, $sql);
+header("location:login.php");
+?>
+
+

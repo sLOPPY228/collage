@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        height: 40px;
+        width:max-content;
+    }
+    .child {
+        background-color:#f2f3f5 ;
+        border : none;
+        padding:.7rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        width: 100vw;
+
+    }
+    #container{
+        background-color: black;
+    }
+</style>    
+<body>
+    <button id="addchild">
+        add child
+    </button>
+    <input type="text" style="height: 40px; width: 100vw;">
+    <div id="container">
+        <h1>parent</h1>
+        <div class="child"></div>
+    </div>
+    
+</body>
+<script>
+    const addchildbutton = document.getElementById('addchild');
+    let container = document.getElementById('container');
+    window.addEventListener('mousemove',()=>{
+        console.log(container);
+        container.innerHTML += '<div class="child"></div>'
+    })
+</script>
+</html>
